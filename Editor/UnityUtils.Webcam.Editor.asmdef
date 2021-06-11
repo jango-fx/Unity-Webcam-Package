@@ -1,8 +1,10 @@
 {
-    "name": "UnityUtils.BasicPackage.Editor",
+    "name": "UnityUtils.Webcam.Editor",
     "references": [],
     "optionalUnityReferences": [],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

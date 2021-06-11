@@ -1,14 +1,13 @@
 {
-  "name": "artcom.basicpackagetemplate",
+  "name": "io.github.jango-fx.webcam",
   "version": "0.0.1",
-  "displayName": "Basic Unity Package Template",
-  "description": "minimal setup to create a custom package",
+  "displayName": "Simple Unity Webcam",
+  "description": "Get WebCam Input into Unity",
   "unity": "2019.1",
   "dependencies": {},
   "keywords": [],
   "author": {
-    "name": "Name Surname",
-    "email": "email@address.com",
-    "url": "https://website.com"
+    "name": "Felix Groll",
+    "url": "https://jango-fx.github.io"
   }
 }
