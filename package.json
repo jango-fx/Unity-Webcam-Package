@@ -1,7 +1,7 @@
 {
   "name": "io.github.jango-fx.webcam",
-  "version": "0.0.1",
-  "displayName": "Simple Unity Webcam",
+  "version": "0.0.2",
+  "displayName": "Simple Webcam",
   "description": "Get WebCam Input into Unity",
   "unity": "2019.1",
   "dependencies": {},
