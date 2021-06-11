@@ -1,0 +1,14 @@
+{
+  "name": "artcom.basicpackagetemplate",
+  "version": "0.0.1",
+  "displayName": "Basic Unity Package Template",
+  "description": "minimal setup to create a custom package",
+  "unity": "2019.1",
+  "dependencies": {},
+  "keywords": [],
+  "author": {
+    "name": "Name Surname",
+    "email": "email@address.com",
+    "url": "https://website.com"
+  }
+}
