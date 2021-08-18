@@ -5,21 +5,20 @@ using UnityEngine;
 //using UnityEditor.Recorder;
 //using UnityEditor.Recorder.Input;
 
-namespace UnityUtils.Webcam
+namespace ƒx.UnityUtils.Webcam
 {
     [ExecuteInEditMode]
     public class GrabWebCam : MonoBehaviour
     {
-        WebCamTexture theWebCamTexture;
+        public bool isVerbose = false;
 
+        WebCamTexture theWebCamTexture;
         public RenderTexture theRecorderRenderTexture;
         Texture theTexture;
         public MeshRenderer theRenderer;
-        public bool IsRecordingRenderTexture = false;
+        public bool isRecordingRenderTexture = false;
         // TODO: public bool IsExecutingInEditor = true;
-        public bool IsVerbose = false;
 
-        [HideInInspector] public List<string> camera = new List<string>(new string[] { "test", "blubb" });
         [HideInInspector] public int cameraID = 0;
 
         void OnEnable()
@@ -30,7 +29,7 @@ namespace UnityUtils.Webcam
 
             int w = theWebCamTexture.width;
             int h = theWebCamTexture.height;
-            Debug.Log("[WEBCAM]: camera size: " + w + "x" + h);
+            if(isVerbose) Debug.Log("[WEBCAM]: camera size: " + w + "x" + h);
 
             theWebCamTexture.Play();
 
@@ -44,10 +43,10 @@ namespace UnityUtils.Webcam
         {
             if (theWebCamTexture.width < 100)
             {
-                Debug.Log("Still waiting another frame for correct info...");
+                if(isVerbose) Debug.Log("Still waiting another frame for correct info...");
                 return;
             }
-            if (IsRecordingRenderTexture)
+            if (isRecordingRenderTexture)
                 UpdateRenderTexture();
         }
 
@@ -61,7 +60,7 @@ namespace UnityUtils.Webcam
                 names[i] = devices[i].name;
                 msg += "\n\t[" + i + "]: " + names[i];
             }
-            if (IsVerbose)
+            if (isVerbose)
             {
                 Debug.Log(msg);
             }

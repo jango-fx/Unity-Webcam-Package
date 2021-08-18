@@ -51,12 +51,10 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -81,7 +79,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8365422056571808710
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,7 +104,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8365422056571808710}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7790751908343188612}
@@ -126,10 +123,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb518c2b2a87f0d4c9c2662b609b105e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theRecorderRenderTexture: {fileID: 8400000, guid: d9a23530bf9464166b3441a42aac52e2, type: 2}
+  isVerbose: 0
+  theRecorderRenderTexture: {fileID: 8400000, guid: d9a23530bf9464166b3441a42aac52e2,
+    type: 2}
   theRenderer: {fileID: 1499522692822394099}
-  IsRecordingRenderTexture: 0
-  camera:
-  - test
-  - blubb
+  isRecordingRenderTexture: 0
   cameraID: 3
